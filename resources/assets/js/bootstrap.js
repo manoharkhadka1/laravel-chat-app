@@ -53,8 +53,8 @@ window.Pusher = require('pusher-js');
 
 window.Echo = new Echo({
     broadcaster: 'pusher',
-    key: 'f4f307030c95885029cf',
-    cluster :'ap2',
-    authEndpoint : "/chat/public/broadcasting/auth",
+    key: 'pusher_key', // your pusher app key
+    cluster :'pusher_cluster', // your pusher app cluster
+    authEndpoint : "/chat/public/broadcasting/auth", // your_project_directory/public/broadcasting/auth
     encrypted: true
 });

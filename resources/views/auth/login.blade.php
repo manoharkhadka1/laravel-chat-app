@@ -1,11 +1,4 @@
-<link rel="stylesheet" href="{{ url('../resources/assets/bootstrap/css/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/font-awesome/css/font-awesome.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/simple-line-icons/simple-line-icons.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/bootstrap-switch/css/bootstrap-switch.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/css/components.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/css/plugins.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/layout/css/layout.min.css') }}">
-<link rel="stylesheet" href="{{ url('../resources/assets/layout/css/custom.min.css') }}">
+<link rel="stylesheet" href="{{ url('../resources/assets/css/bootstrap.min.css') }}">
 @extends('layouts.app')
 
 @section('content')

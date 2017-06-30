@@ -28,6 +28,7 @@ const app = new Vue({
         information:'',
         users:[],
         userId:'',
+        url:$("#base_url").val()
     	},
     methods: {
         /**
@@ -60,7 +61,7 @@ const app = new Vue({
         getCurrentUser(user) {
             this.messages = "";
             this.userId = user.userId;
-            axios.get('/chat/public/messages/'+this.userId).then( response=> {
+            axios.get(this.url+'/messages/'+this.userId).then( response=> {
                 this.messages = response.data;
                 // scroll to bottom after new message added
                 this.$nextTick(() => {

@@ -26,12 +26,13 @@
         data() {
             return {
                 default_image:$("#default_image").val(),
-                users:[]
+                users:[],
+                url:$("#base_url").val()
             }
         },
         mounted() {
             // get users lists in left sidebar
-            axios.get('/chat/public/users').then( response=> {
+            axios.get(this.url+'/users').then( response=> {
                 this.users = response.data;
             });
 

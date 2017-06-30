@@ -23,7 +23,8 @@
                 message:'',
                 title:'',
                 type:4,
-                allowedExtensions:['pdf','jpg','jpeg','png','zip']   
+                allowedExtensions:['pdf','jpg','jpeg','png','zip'],
+                url:$("#base_url").val()
             }
         },
         methods: {
@@ -44,7 +45,7 @@
                         type:'1',
                     });
 
-                    axios.post('/chat/public/messages/'+this.userId,data).then( response=> {
+                    axios.post(this.url+'/messages/'+this.userId,data).then( response=> {
                         // this.emitMessage(response);
                     });
                 }
@@ -152,7 +153,7 @@
                     if(this.validateFile(filesize,extension)) {
                         data.append('file',files[0]);
                         data.append('type',this.type);
-                        axios.post('/chat/public/fileUpload/'+this.userId,data).then( response=> {
+                        axios.post(this.url+'/fileUpload/'+this.userId,data).then( response=> {
                             this.emitMessage(response);
                              
                         });

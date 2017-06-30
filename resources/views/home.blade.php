@@ -107,6 +107,7 @@
             <input type="hidden" value="{{ Auth::user()->name }}" id="user_name">
             <input type="hidden" value="{{ Auth::user()->id }}" id="authId">
             <input type="hidden" value="{{ $imageSrc }}" id="default_image">
+            <input type="hidden" value="{{ url('') }}" id="base_url">
             <!-- Sidebar -->
             <div id="sidebar-wrapper">
                 <ul class="sidebar-nav">
