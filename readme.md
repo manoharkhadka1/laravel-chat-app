@@ -1,51 +1,32 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+##laravel-chat-app
+<p align="center"><img src="http://res.cloudinary.com/dxwpi6npb/image/upload/v1498798759/chat-app_y1iqpj.png"></p>
+<p><g-emoji alias="speech_balloon" fallback-src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f4ac.png" ios-version="6.0">💬</g-emoji> <a href="http://consultpronp.com/chat/public/register">Live Demo</a></p>
+<h3>Project Installation</h3>
+<ol>
+<li>Clone repo / download project</li>
+<li>Open cmd and go to your project directory folder</li>
+<li>Install composer dependencies (<code>composer install</code>)</li>
+<li>Install node dependencies (<code>npm install</code>)</li>
+<li>Create <code>.env</code> file with environment variables,or you can rename <code>.env.example</code> file to <code>.env</code></li>
+<li>Set database connection in <code>.env</code> file</li>
+<li>Go to <a href="https://pusher.com/">Pusher Dashboard</a> and create new account if you have not done before.</li>
+<li>
+Set following things in <code>.env</code> file
+	<ul>
+		<li><code>BROADCAST_DRIVER=pusher=pusher</code></li>
+		<li><code>PUSHER_APP_ID=your_pusher_app_id</code></li>
+		<li><code>PUSHER_APP_KEY=your_pusher_app_key</code></li>
+		<li><code>PUSHER_APP_SECRET=your_pusher_app_secret</code></li>
+	</ul>
+</li>
+<li>Open your <code></li>project_directory/config/broadcasting.php</code>file and find <code>connections->pusher->options</code> and set <code>cluster</code> to <code>pusher cluster value</code></li>
+<li>Open your <code></li>project_directory/resources/assets/js/bootstrap.js</code>file and at the end of file set value for <code>key, cluster</code> from pusher app dashboard</code></li>
+<li>
+<li>Run migrations to generate tables in your database(<code>php artisan migrate</code>)</li>
+<li>
+	Open cmd and go to your project directory folder and run <code>npm run watch</code>
+</li>
+<li>Finally enter <code>project_directory/public</code> in the browser to run the app</li>
+</ol>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
-
-## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb combination of simplicity, elegance, and innovation give you tools you need to build any application with which you are tasked.
-
-## Learning Laravel
-
-Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. The [Laravel documentation](https://laravel.com/docs) is thorough, complete, and makes it a breeze to get started learning the framework.
-
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 900 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
-
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](http://patreon.com/taylorotwell):
-
-- **[Vehikl](http://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Styde](https://styde.net)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+<p>Enjoy chatting.</p>
